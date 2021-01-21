@@ -4,7 +4,7 @@ const aleatorio = () =>
   console.log(Math.floor(Math.random() * (600 - 500 + 1) + 500));
 aleatorio();
 
-//10)Programa una funcion que reciba un número y evalúe si es capicúla o no (que se lee igual en un sentido que en otro.)
+//10)Programa una funcion que reciba un número y evalúe si es capicua o no (que se lee igual en un sentido que en otro.)
 console.log("%cEjercicio 10", "font-weight:bold; font-size:14px");
 const capicua = (numero = undefined) => {
   // Verificadores
