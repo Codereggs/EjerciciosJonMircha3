@@ -47,14 +47,15 @@ console.log("%cEjercicio 11", "font-weight:bold; font-size:14px");
 const factorial = (numero) => {
   // Verificadores
   const texto = new RegExp("^([0-9])*$", "ig");
-  if (!numero || numero === undefined)
+  if (numero === undefined)
     return console.warn("Inserte un número válido.");
   if (Math.sign(numero) === -1)
     return console.error(
       "Ingresastes un número negativo, ingresa uno positivo."
     );
   if (!texto.test(numero))
-    return console.error("Ingresastes un texto, ingresa un número válido.");
+    return console.error("Ingresastes un texto, objeto o array, ingresa un número válido.");
+  
 
   //Factorial
   let factor = 1;
@@ -62,7 +63,7 @@ const factorial = (numero) => {
     factor = factor * i;
   }
   return console.info(
-    `El factor indicado es ${numero}, su producto es ${factor}`
+    `El factor indicado es ${numero}, su producto es ${factor}.`
   );
 };
 
